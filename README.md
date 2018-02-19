@@ -1,8 +1,8 @@
-# Microjournal
-### Microjournal is a micro-journaling app that imposes a maximum character count as a low-commitment alternative to typical blogging services
+# Write Away
+### Write Away is a micro-journaling app that imposes a maximum character count as a low-commitment alternative to typical blogging services
 
 ## Background and Overview
-Many people like the idea of keeping a journal, but find the actual act of writing consistently everyday to be a daunting or time-consuming endeavor that can be difficult to integrate with their other responsibilities. Microjournal is a private micro-journal that enforces a maximum character limit to encourage a regular, but low-commitment approach to journaling.
+Many people like the idea of keeping a journal, but find the actual act of writing consistently everyday to be a daunting or time-consuming endeavor that can be difficult to integrate with their other responsibilities. Write Away is a private micro-journal that enforces a maximum character limit to encourage a regular, but low-commitment approach to journaling.
 
 ## MVPs and Functionality
 ### MVPs
