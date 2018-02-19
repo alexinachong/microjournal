@@ -41,21 +41,26 @@ Many people like the idea of keeping a journal, but find the actual act of writi
 Python/Django backend + PostgreSQL database + JavaScript/React/Redux frontend
 Possible Twilio API for text message reminders
 
-
-***ADD TECHNICAL CHALLENGES***
+### Technical Challenges
++ Setting up Django
++ Learning how to use PostgreSQL with Django
++ Understanding how to make models, controllers, and views in Django
++ Connecting Django with React/Redux
++ Using D3.js or Chart.js to make charts for the post data
++ Integrating Twilio API for text message reminders
 
 ## Group Members and Work Breakdown
 Rewel Garcia, David Harris, and Alexina Chong
 
 ### Weekend 1
-- [ ] Set up Python3 and Django locally **(ALL)**
-- [ ] Learn Python **(ALL)**
-- [ ] Learn Django **(ALL)**
-- [ ] Begin implementing user authentication **(David & Rewel)**
-- [ ] Work on first draft of wireframes **(Alexina)**
-- [ ] Finalize proposal **(Alexina)**
+- [x] Set up Python3 and Django locally **(ALL)**
+- [x] Learn Python **(ALL)**
+- [x] Begin learning Django **(ALL)**
+- [x] Begin implementing user authentication **(David & Rewel)**
+- [x] Finalize proposal **(Alexina)**
 
 ### W11D1
+- [ ] Work on first draft of wireframes **(Alexina)**
 - [ ] Set up database **(David & Rewel)**
 - [ ] Finish implementing user authentication **(David & Rewel)**
 - [ ] Work on `posts` **(ALL)**
@@ -70,6 +75,7 @@ Rewel Garcia, David Harris, and Alexina Chong
   - [ ] Templates: **(Alexina)**
     - [ ] 'Create post' button should disappear if a post has already been created that day.
     - [ ] User should be able to add entries for any missed days.
+- [ ] Work on homepage design **(Alexina)**
 
 ### W11D2
 - [ ] Finish implementing `posts`
