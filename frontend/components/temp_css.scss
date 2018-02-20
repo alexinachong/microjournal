@@ -1,0 +1,104 @@
+body, html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.container {
+  color: #FFFFFF;
+  background-color: #2a284f;
+  height: 100%;
+}
+
+.main-links {
+  color: #FFFFFF;
+}
+
+.main-links:hover {
+  color: #D2D2D2;
+}
+
+.nav-container {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.nav {
+  margin: 0 auto;
+  width: 80%;
+  padding: 15px 0px;
+}
+
+.nav h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main h1 {
+  padding: 180px 0px 45px 0px;
+}
+
+.session-buttons-container {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px;
+}
+
+.session-buttons-container a {
+  color: #FFFFFF;
+}
+
+.session-buttons-container a:hover {
+  color: #D2D2D2;
+  border: 2px solid #D2D2D2;
+}
+
+.session-buttons {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 15px 0px;
+  width: 120px;
+}
+
+.footer-container {
+  // height: 100%;
+  margin-top: 120px;
+  // border-top: 1px solid #FFFFFF;
+  background-color: #595959;
+  text-align: center;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 80%;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
