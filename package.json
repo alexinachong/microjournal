@@ -4,7 +4,8 @@
   "description": "## Background and Overview Many people like the idea of keeping a journal, but find the actual act of writing consistently everyday to be a daunting or time-consuming endeavor that can be difficult to integrate with their other responsibilities. Write Away is a private micro-journal that enforces a maximum character limit to encourage a regular, but low-commitment approach to journaling.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
   },
   "repository": {
     "type": "git",
