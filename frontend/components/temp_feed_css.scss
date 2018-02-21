@@ -1,0 +1,88 @@
+.nav-items {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // border: 1px solid yellow;
+}
+
+.nav-items-links {
+  padding: 24px 0px 22px 0px;
+  display: block;
+  height: 100%;
+  // min-width: 125px;
+  width: 33%;
+  // border: 1px solid red;
+  text-align: center;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  // position: relative;
+  overflow: hidden;
+  padding: 24px 2px 22px 2px;
+  height: 100%;
+}
+
+
+.nav-dropdown-content {
+  border-top: 2px solid #283861;
+  // border: 1px solid blue;
+  border-radius: 2px;
+  width: 120px;
+  display: none;
+  position: absolute;
+  background-color: #283e7d;
+  z-index: 1;
+  margin: 22px 0px;
+}
+
+.nav-dropdown-elements {
+  display: block;
+  padding: 10px 20px;
+}
+
+
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+}
+
+.feed-main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.feed-timeline-nav {
+  width: 200px;
+  padding: 5px 0px 10px 20px;
+}
+
+.feed-timeline-nav-year {
+  padding: 15px 0px 0px 0px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.feed-timeline-nav-months-list {
+  padding-top: 5px;
+}
+
+.feed-timeline-nav-month {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 3px 0px 3px 10px;
+  // padding-left: 10px;
+}
+
+.feed-timeline-content {
+  padding: 10px 20px;
+}
+
+.feed-timeline-content-date {
+  padding: 10px 0px;
+}
+
+.feed-timeline-content-post {
+  padding: 20px 0px;
+}
