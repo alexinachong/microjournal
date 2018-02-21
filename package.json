@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/alexinachong/write-away/issues"
   },
-  "homepage": "https://github.com/alexinachong/write-away#readme"
+  "homepage": "https://github.com/alexinachong/write-away#readme",
+  "dependencies": {
+    "create-react-app": "^1.5.2"
+  }
 }
