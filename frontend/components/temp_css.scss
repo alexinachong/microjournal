@@ -19,12 +19,13 @@ h2 {
 
 .container {
   color: #FFFFFF;
-  background-color: #2a284f;
+  background-color: #2e4890;
   height: 100%;
 }
 
 .main-links {
   color: #FFFFFF;
+  transition: all 0.2s ease;
 }
 
 .main-links:hover {
@@ -32,18 +33,26 @@ h2 {
 }
 
 .nav-container {
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 2px solid #283861;
+  // background-color: #2a284f;
+  background-color: #2e4890;
+  color: #FFFFFF;
 }
 
 .nav {
   margin: 0 auto;
   width: 80%;
-  padding: 15px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  font-size: 18px;
 }
 
 .nav h3 {
   font-family: 'Pacifico', cursive;
   font-size: 32px;
+  padding: 16px 0px;
 }
 
 .main-container {
@@ -73,6 +82,7 @@ h2 {
 
 .session-buttons-container a {
   color: #FFFFFF;
+  transition: all 0.2s ease;
 }
 
 .session-buttons-container a:hover {
@@ -91,7 +101,9 @@ h2 {
   // height: 100%;
   margin-top: 120px;
   // border-top: 1px solid #FFFFFF;
-  background-color: #595959;
+  // background-color: #283861;
+  // background-color: #8E94A6;
+  background-color: #5c6375;
   text-align: center;
 }
 
