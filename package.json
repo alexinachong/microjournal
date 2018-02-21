@@ -1,0 +1,36 @@
+{
+  "name": "write-away",
+  "version": "1.0.0",
+  "description": "## Background and Overview Many people like the idea of keeping a journal, but find the actual act of writing consistently everyday to be a daunting or time-consuming endeavor that can be difficult to integrate with their other responsibilities. Write Away is a private micro-journal that enforces a maximum character limit to encourage a regular, but low-commitment approach to journaling.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexinachong/write-away.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexinachong/write-away/issues"
+  },
+  "homepage": "https://github.com/alexinachong/write-away#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "create-react-app": "^1.5.2",
+    "jquery": "^3.3.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "webpack": "^3.11.0"
+  }
+}
