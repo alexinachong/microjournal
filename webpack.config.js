@@ -4,7 +4,7 @@ module.exports = {
   context: __dirname,
   entry: "./flex_project/static/frontend/write_away.jsx",
   output: {
-    path: path.resolve(__dirname, "tododemo", "static", "build"),
+    path: path.resolve(__dirname, "flex_project", "static", "build"),
     filename: "bundle.js"
   },
   module: {
