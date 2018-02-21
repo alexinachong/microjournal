@@ -15,6 +15,11 @@
   width: 33%;
   // border: 1px solid red;
   text-align: center;
+  transition: all 0.2s ease;
+}
+
+.nav-items-links:hover {
+  background-color: #223569;
 }
 
 .nav-dropdown {
@@ -30,17 +35,24 @@
   border-top: 2px solid #283861;
   // border: 1px solid blue;
   border-radius: 2px;
-  width: 120px;
+  width: 130px;
   display: none;
   position: absolute;
-  background-color: #283e7d;
+  // background-color: #223569;
+  background-color: #2e4890;
   z-index: 1;
   margin: 22px 0px;
+  text-align: center;
 }
 
 .nav-dropdown-elements {
   display: block;
   padding: 10px 20px;
+  transition: all 0.2s ease;
+}
+
+.nav-dropdown-elements:hover {
+  background-color: #223569;
 }
 
 
@@ -51,11 +63,14 @@
 .feed-main-container {
   display: flex;
   flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 .feed-timeline-nav {
   width: 200px;
-  padding: 5px 0px 10px 20px;
+  padding: 5px 30px 10px 20px;
 }
 
 .feed-timeline-nav-year {
@@ -80,9 +95,26 @@
 }
 
 .feed-timeline-content-date {
-  padding: 10px 0px;
+  padding: 10px;
+  display: block;
+  background-color: #6480ce;
+  border: 1px solid #6480ce;
+  border-radius: 2px;
 }
 
+.feed-timeline-content-date a {
+  // color: #2e4890;
+  color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.feed-timeline-content-date a:hover {
+  // color: #223569;
+  color: #D2D2D2;
+}
+
+
+
 .feed-timeline-content-post {
-  padding: 20px 0px;
+  padding: 15px 10px 35px 10px;
 }
