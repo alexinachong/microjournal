@@ -25963,7 +25963,7 @@ var _form = __webpack_require__(122);
 
 var _form2 = _interopRequireDefault(_form);
 
-var _session_actions = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../actions/session_actions\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _session_actions = __webpack_require__(124);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25980,6 +25980,43 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_form2.default);
+
+/***/ }),
+/* 124 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.login = exports.receiveCurrentUser = exports.RECEIVE_CURRENT_USER = undefined;
+
+var _session_api_util = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../util/session_api_util\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var APIUtil = _interopRequireWildcard(_session_api_util);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var RECEIVE_CURRENT_USER = exports.RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
+
+var receiveCurrentUser = exports.receiveCurrentUser = function receiveCurrentUser(currentUser) {
+  // console.log('action receiveCurrentUser');
+  return {
+    type: RECEIVE_CURRENT_USER,
+    currentUser: currentUser
+  };
+};
+
+var login = exports.login = function login(user) {
+  return function (dispatch) {
+    // console.log('action signin');
+    return APIUtil.login(user).then(function (rUser) {
+      return dispatch(receiveCurrentUser(rUser));
+    });
+  };
+};
 
 /***/ })
 /******/ ]);
