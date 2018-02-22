@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'write-away',
+    'write_away',
     'rest_framework',
     'jquery'
 ]
