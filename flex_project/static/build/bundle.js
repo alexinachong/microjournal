@@ -25963,14 +25963,20 @@ var _form = __webpack_require__(122);
 
 var _form2 = _interopRequireDefault(_form);
 
+var _session_actions = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../actions/session_actions\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {};
 };
 
-var mapDispatchToProps = function mapDispatchToProps(state, ownProps) {
-  return {};
+var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
+  return {
+    login: function login(user) {
+      return dispatch((0, _session_actions.login)(user));
+    }
+  };
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_form2.default);
