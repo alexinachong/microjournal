@@ -5,7 +5,6 @@ from django.contrib.auth.models import PermissionsMixin
 from django.utils.translation import ugettext_lazy as _
 
 # Create your models here.
-
 class MyUserManager(BaseUserManager):
     """
     A custom user manager to deal with emails as unique identifiers for auth
@@ -62,9 +61,10 @@ class User(AbstractBaseUser, PermissionsMixin):
     def get_short_name(self):
         return self.email
 
+
 #currently under testing (feel free to edit accordingly)
-class Post(models.Model):
-    title = models.CharField(max_length=100)
-    body = models.CharField(max_length=280)
-    #a user has many posts (many-to-one relationship)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+# class Post(models.Model):
+#     title = models.CharField(max_length=100)
+#     body = models.CharField(max_length=280)
+#     #a user has many posts (many-to-one relationship)
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
