@@ -25993,7 +25993,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.login = exports.receiveCurrentUser = exports.RECEIVE_CURRENT_USER = undefined;
 
-var _session_api_util = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../util/session_api_util\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _session_api_util = __webpack_require__(125);
 
 var APIUtil = _interopRequireWildcard(_session_api_util);
 
@@ -26016,6 +26016,24 @@ var login = exports.login = function login(user) {
       return dispatch(receiveCurrentUser(rUser));
     });
   };
+};
+
+/***/ }),
+/* 125 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var login = exports.login = function login(user) {
+  return $.ajax({
+    url: 'api/session',
+    method: 'POST',
+    data: user
+  });
 };
 
 /***/ })
