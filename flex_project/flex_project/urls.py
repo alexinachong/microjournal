@@ -22,7 +22,6 @@ urlpatterns = [
     url(r'^$', IndexView.as_view()),
     path('admin/', admin.site.urls),
 ]
-
 # examples for urls:
 #     url(r'^$', IndexView.as_view()),
 #     url(r'^api/todos/$', TodoListView.as_view()),
