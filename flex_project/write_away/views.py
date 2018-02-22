@@ -5,6 +5,6 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404, HttpRespons
 class IndexView(TemplateView):
     template_name = "application.html"
 
-class User():
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+# class User():
+#     queryset = User.objects.all()
+#     serializer_class = UserSerializer
