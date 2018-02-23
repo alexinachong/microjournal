@@ -24,18 +24,20 @@ h2 {
 }
 
 .post-icons {
-  width: 24px;
+  height: 24px;
 }
 
 .post-buttons {
   background-color: transparent;
-  border: 1px solid #6480ce;
-  padding: 0px 8px;
+  border: 1px solid transparent;
+  width: 45px;
+  height: 100%;
+  // transition: all 0.2s ease;
 }
 
 .post-buttons:hover {
-  border: 1px solid #2e4890;
-  background-color: #2e4890;
+  border: 1px solid #223569;
+  background-color: #223569;
 }
 
 /* moved to homepage */

@@ -91,33 +91,47 @@
   // padding-left: 10px;
 }
 
+.feed-timeline-content-item:hover .feed-timeline-content-date-container {
+  background-color: #2e4890;
+}
+
 .feed-timeline-content {
   padding: 10px 20px;
 }
 
 .feed-timeline-content-date-container {
   display: flex;
+  background-color: #6480ce;
+  border: 1px solid #6480ce;
+  border-radius: 2px;
+  // border-top-right-radius: 2px;
+  // border-bottom-right-radius: 2px;
 }
+
+// .feed-timeline-content-date-container:hover {
+//   background-color: #2e4890;
+// }
 
 .feed-timeline-content-date {
   padding: 10px 5px;
   display: block;
-  background-color: #6480ce;
-  border: 1px solid #6480ce;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  // background-color: #6480ce;
+  // border: 1px solid #6480ce;
+  // border-top-left-radius: 2px;
+  // border-bottom-left-radius: 2px;
   flex-grow: 1;
 }
 
 .feed-timeline-content-date-post-options {
-  background-color: #6480ce;
-  border: 1px solid #6480ce;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  width: 110px;
+  width: 135px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
 }
 
 .feed-timeline-content-date a {
