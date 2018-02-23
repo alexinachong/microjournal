@@ -13,16 +13,59 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path
-from django.conf.urls import url
-from write_away.views import IndexView
+# from django.contrib import admin
+# from django.urls import path
+# from django.conf.urls import url
+# from write_away.views import IndexView
+#
+# urlpatterns = [
+#     url(r'^$', IndexView.as_view()),
+#     path('admin/', admin.site.urls),
+# ]
+#
+# # examples for urls:
+# #     url(r'^$', IndexView.as_view()),
+# #     url(r'^api/todos/$', TodoListView.as_view()),
+
+
+
+#test
+from django.conf.urls import url, include
+from django.views import generic
+from rest_framework.schemas import get_schema_view
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+from rest_framework import views, serializers, status
+from rest_framework.response import Response
+
+class MessageSerializer(serializers.Serializer):
+    message = serializers.CharField()
+
+class EchoView(views.APIView):
+    def post(self, request, *args, **kwargs):
+        serializer = MessageSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        return Response(
+            serializer.data, status=status.HTTP_201_CREATED)
 
 urlpatterns = [
-    url(r'^$', IndexView.as_view()),
-    path('admin/', admin.site.urls),
+    url(r'^$', generic.RedirectView.as_view(
+         url='/api/', permanent=False)),
+    url(r'^api/$', get_schema_view()),
+    url(r'^api/auth/', include(
+        'rest_framework.urls', namespace='rest_framework')),
+    url(r'^api/auth/token/obtain/$', TokenObtainPairView.as_view()),
+    url(r'^api/auth/token/refresh/$', TokenRefreshView.as_view()),
+    url(r'^api/echo/$', EchoView.as_view()),
 ]
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9603aa61e67e070090633c2b9138a81f1f2f172d
 # examples for urls:
 #     url(r'^$', IndexView.as_view()),
 #     url(r'^api/todos/$', TodoListView.as_view()),
+
