@@ -105,5 +105,20 @@
 
 
     </div>
+
+
+    <script type="text/javascript">
+      const postButtons = document.getElementsByClassName('post-buttons');
+      const dateContainer = document.getElementsByClassName('feed-timeline-content-date-container');
+
+      Array.from(dateContainer).forEach(el => {
+        el.addEventListener('mouseover', () => {
+          el.lastElementChild.classList.add('show');
+        })
+        el.addEventListener('mouseleave', () => {
+          el.lastElementChild.classList.remove('show');
+        });
+      });
+    </script>
   </body>
 </html>
