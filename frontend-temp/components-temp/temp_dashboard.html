@@ -12,6 +12,21 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- <script>
+    $( function() {
+      $( "#datepicker" ).datepicker({
+        changeMonth: true,
+        changeYear: true
+        defaultDate: new Date()
+      });
+    } );
+    </script> -->
+
   </head>
   <body>
     <div class="dashboard-container">
@@ -36,6 +51,34 @@
 
       <section class="dashboard-main-container">
 
+        <section class="dashboard-main-left">
+          <section class="dashboard-new-post">
+            <h2>Add an entry</h2>
+
+            <p>Date: <input type="text" id="datepicker"></p>
+
+            <p>Title: <input type="text"></p>
+
+            <textarea class="input-post" name="post" rows="8" cols="60" autofocus></textarea>
+            <br />
+            <button type="submit" name="submit-post">Submit!</button>
+          </section>
+          <section class="dashboard-graph">
+            <h2>Graphs</h2>
+            <p>Graph goes here</p>
+
+            <p><a href="#">More graphs...</a></p>
+          </section>
+        </section>
+
+        <section class="dashboard-main-right">
+          <section class="dashboard-calendar">
+
+          </section>
+          <section class="dashboard-stats">
+
+          </section>
+        </section>
 
       </section>
 
