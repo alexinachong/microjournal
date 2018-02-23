@@ -61,11 +61,7 @@ urlpatterns = [
     url(r'^api/echo/$', EchoView.as_view()),
 ]
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 9603aa61e67e070090633c2b9138a81f1f2f172d
 # examples for urls:
 #     url(r'^$', IndexView.as_view()),
 #     url(r'^api/todos/$', TodoListView.as_view()),
-
