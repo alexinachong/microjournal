@@ -3,6 +3,8 @@ from django.contrib.auth.models import BaseUserManager
 from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.utils.translation import ugettext_lazy as _
+from django.utils import timezone
+from django.conf import settings
 
 # Create your models here.
 class MyUserManager(BaseUserManager):
@@ -63,8 +65,18 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 
 #currently under testing (feel free to edit accordingly)
-# class Post(models.Model):
-#     title = models.CharField(max_length=100)
-#     body = models.CharField(max_length=280)
-#     #a user has many posts (many-to-one relationship)
-#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+#I can interactively use this in the admin page
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    body = models.CharField(max_length=280)
+    #a user has many posts (many-to-one relationship)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
