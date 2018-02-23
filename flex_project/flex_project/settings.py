@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'todo',
+    'write_away',
     'rest_framework',
     'jquery'
 ]
@@ -70,8 +70,19 @@ TEMPLATES = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+}
+
 WSGI_APPLICATION = 'flex_project.wsgi.application'
 
+AUTH_USER_MODEL = 'write_away.User'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
