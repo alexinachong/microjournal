@@ -1,0 +1,44 @@
+<html>
+    <div>
+        This is a div
+        <div class="container">
+            This is the list
+        <ul id='list'>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        </div>
+        <div class="container">Other list
+            <ul>
+                <li>four</li>
+                <li>five</li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        ul {
+            visibility: hidden;
+        }
+        /* ul:hover li{
+            display: block;
+        } */
+        .show {
+            visibility: visible;
+        }
+    </style>
+    <script>
+
+        const li = document.getElementsByTagName('li');
+        const div = document.getElementsByClassName('container');
+        Array.from(div).forEach(el => {
+            console.log(el)
+            el.addEventListener('mouseover', () => {
+                el.firstElementChild.classList.add('show');
+            })
+            el.addEventListener('mouseleave', () => {
+                el.firstElementChild.classList.remove('show');
+        });
+    });
+    </script>
+</html>

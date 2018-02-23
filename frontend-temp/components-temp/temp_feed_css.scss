@@ -1,4 +1,4 @@
-// moved to feed.scss
+/* moved to feed.scss */
 .nav-items {
   width: 450px;
   height: 100%;
@@ -95,12 +95,29 @@
   padding: 10px 20px;
 }
 
+.feed-timeline-content-date-container {
+  display: flex;
+}
+
 .feed-timeline-content-date {
   padding: 10px 5px;
   display: block;
   background-color: #6480ce;
   border: 1px solid #6480ce;
-  border-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  flex-grow: 1;
+}
+
+.feed-timeline-content-date-post-options {
+  background-color: #6480ce;
+  border: 1px solid #6480ce;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .feed-timeline-content-date a {

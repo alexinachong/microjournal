@@ -1,4 +1,4 @@
-// moved to application.scss
+/* moved to application */
 body, html {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
@@ -18,10 +18,30 @@ h2 {
   font-weight: 500;
 }
 
-// moved to homepage.scss
+/* NEW */
+.icons {
+  width: 12px;
+}
+
+.post-icons {
+  width: 24px;
+}
+
+.post-buttons {
+  background-color: transparent;
+  border: 1px solid #6480ce;
+  padding: 0px 8px;
+}
+
+.post-buttons:hover {
+  border: 1px solid #2e4890;
+  background-color: #2e4890;
+}
+
+/* moved to homepage */
 .homepage-container {
   color: #FFFFFF;
-  background-color: #2e4890;
+  background: #2e4890;
   height: 100%;
 }
 
