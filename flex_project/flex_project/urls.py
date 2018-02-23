@@ -60,3 +60,9 @@ urlpatterns = [
     url(r'^api/auth/token/refresh/$', TokenRefreshView.as_view()),
     url(r'^api/echo/$', EchoView.as_view()),
 ]
+
+
+# examples for urls:
+#     url(r'^$', IndexView.as_view()),
+#     url(r'^api/todos/$', TodoListView.as_view()),
+
