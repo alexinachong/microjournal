@@ -91,6 +91,10 @@
   // padding-left: 10px;
 }
 
+.feed-timeline-content-item:hover .feed-timeline-content-date-container {
+  background-color: #2e4890;
+}
+
 .feed-timeline-content {
   padding: 10px 20px;
 }
@@ -104,9 +108,9 @@
   // border-bottom-right-radius: 2px;
 }
 
-.feed-timeline-content-date-container:hover {
-  background-color: #2e4890;
-}
+// .feed-timeline-content-date-container:hover {
+//   background-color: #2e4890;
+// }
 
 .feed-timeline-content-date {
   padding: 10px 5px;
