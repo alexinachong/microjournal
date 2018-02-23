@@ -13,14 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-# from django.contrib import admin
-# from django.urls import path
 # from django.conf.urls import url
 # from write_away.views import IndexView
 #
 # urlpatterns = [
 #     url(r'^$', IndexView.as_view()),
-#     path('admin/', admin.site.urls),
+
 # ]
 #
 # # examples for urls:
@@ -30,6 +28,8 @@ Including another URLconf
 
 
 #test
+from django.contrib import admin
+# from django.urls import path
 from django.conf.urls import url, include
 from django.views import generic
 from rest_framework.schemas import get_schema_view
@@ -59,6 +59,7 @@ urlpatterns = [
     url(r'^api/auth/token/obtain/$', TokenObtainPairView.as_view()),
     url(r'^api/auth/token/refresh/$', TokenRefreshView.as_view()),
     url(r'^api/echo/$', EchoView.as_view()),
+    url(r'^admin/', admin.site.urls),
 ]
 
 
