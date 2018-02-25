@@ -93,7 +93,8 @@ h2 {
 }
 
 .main h1 {
-  padding: 180px 0px 45px 0px;
+  top: 180px;
+  padding: 0px 0px 45px 0px;
 }
 
 .session-buttons-container {
@@ -137,4 +138,8 @@ h2 {
   padding: 40px 0px;
   display: flex;
   justify-content: flex-end;
+}
+
+#write-less, #remember-more, #write-away {
+
 }
