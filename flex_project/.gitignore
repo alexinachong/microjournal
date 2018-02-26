@@ -1,6 +1,6 @@
 *~
-bundle.js
-bundle.js.map
+static/build/bundle.js
+static/build/bundle.js.map
 node_modules/*
 node_writeaway_env/*
 settings.py
