@@ -5,3 +5,4 @@ node_modules/*
 node_writeaway_env/*
 settings.py
 *.pyc
+write_away/migrations/*
