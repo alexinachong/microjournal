@@ -20,19 +20,19 @@ class NavBar extends React.Component {
     } else {
       return (
         <div>
-          <nav className="nav-container">
-            <nav className="nav">
-              <h3><a href="#" className="main-links">Write Away</a></h3>
-              <section className="nav-items">
-                <a href="#" className="main-links nav-items-links">Dashboard</a>
-                <a href="#" className="main-links nav-items-links">Feed</a>
-                <a href="#" className="main-links nav-items-links">Statistics</a>
+          <nav class="nav-container">
+            <nav class="nav">
+              <h3><a href="#" class="main-links">Write Away</a></h3>
+              <section class="nav-items">
+                <a href="#" class="main-links nav-items-links">Dashboard</a>
+                <a href="#" class="main-links nav-items-links">Feed</a>
+                <a href="#" class="main-links nav-items-links">Statistics</a>
               </section>
-              <section className="nav-dropdown">
-                <div className="nav-dropdown-email">{this.props.currentUser.email}</div>
-                <div className="nav-dropdown-content">
-                  <a href="#" className="nav-dropdown-elements main-links">Settings</a>
-                  <a href="#" className="nav-dropdown-elements main-links">Log Out</a>
+              <section class="nav-dropdown">
+                <div class="nav-dropdown-email">demouser@gmail.com <img src="./images-temp/chevron-down.png" class="icons" /></div>
+                <div class="nav-dropdown-content">
+                  <a href="#" class="nav-dropdown-elements main-links">Settings</a>
+                  <a href="#" class="nav-dropdown-elements main-links">Log Out</a>
                 </div>
               </section>
             </nav>
