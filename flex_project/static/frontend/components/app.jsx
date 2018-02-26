@@ -9,14 +9,14 @@ import {
   Refresh
 } from 'react-router-dom';
 import NavBarContainer from './nav/nav_bar_container';
-// import HomepageContainer from './homepage/homepage_container';
+import HomepageContainer from './homepage/homepage_container';
 import Footer from './nav/footer';
 import LoginContainer from './session/form_container';
 
 const App = (store) => {
   return (
     <div className="container">
-      <Route path="/" component={LoginContainer} />
+      <Route path="/" component={HomepageContainer} />
     </div>
   );
 };
