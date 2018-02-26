@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Redirect, Switch, Link, HashRouter } from 'react-router-dom';
-import { AuthRoute, ProtectedRoute } from '../../utils/route_utils';
+// import { AuthRoute, ProtectedRoute } from '../../utils/route_utils';
 
 class Homepage extends React.Component {
   constructor(props) {

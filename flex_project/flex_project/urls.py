@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 # from django.conf.urls import url
-# from write_away.views import IndexView
+from write_away.views import IndexView
 #
 # urlpatterns = [
 #     url(r'^$', IndexView.as_view()),
@@ -52,13 +52,13 @@ class EchoView(views.APIView):
 
 urlpatterns = [
     url(r'^$', generic.RedirectView.as_view(
-         url='/api/', permanent=False)),
-    url(r'^api/$', get_schema_view()),
-    url(r'^api/auth/', include(
-        'rest_framework.urls', namespace='rest_framework')),
-    url(r'^api/auth/token/obtain/$', TokenObtainPairView.as_view()),
-    url(r'^api/auth/token/refresh/$', TokenRefreshView.as_view()),
-    url(r'^api/echo/$', EchoView.as_view()),
+         url='/rad/', permanent=False)),
+    url(r'^rad/$', IndexView.as_view()),
+    # url(r'^rad/auth/', include(
+    #     'rest_framework.urls', namespace='rest_framework')),
+    # url(r'^rad/auth/token/obtain/$', TokenObtainPairView.as_view()),
+    # url(r'^rad/auth/token/refresh/$', TokenRefreshView.as_view()),
+    # url(r'^rad/echo/$', EchoView.as_view()),
     url(r'^admin/', admin.site.urls),
 ]
 
